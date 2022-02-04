@@ -12,8 +12,8 @@ div.title1 {
 	font-weight: bold;
 	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	color: rgb(255, 255, 255);
-	font-size: 2vw;
 	text-align: center;
+	font-size: 3vw;
 }
 
 .home {
@@ -33,10 +33,10 @@ div.title1 {
 }
 
 .a-checkpoint-list ul{
-  list-style-image: url("../Images/thumb256.png");
-  list-style-type: none;
-  padding-left: 0px;
-  font-size:50px;
+	list-style-image: url("../Images/thumb256.png");
+	list-style-type: none;
+	padding-left: 0px;
+	font-size:50px;
 }
 
 img {
@@ -75,7 +75,7 @@ img {
 }
 
 .topnav a.active {
-	background-color: #04AA6D;
+	background-color: #000000;
 	color: white;
 }
 

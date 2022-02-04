@@ -38,7 +38,7 @@ img {
 	margin-left: 5px;
 } 
 .topnav {
-    overflow: hidden;
+    overflow: hidden;	
 }
 
 .topnav a {
@@ -48,7 +48,6 @@ img {
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 20px;
-	
 }
 
 .topnav a:hover {
