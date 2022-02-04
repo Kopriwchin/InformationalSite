@@ -1,5 +1,5 @@
 body {
-	background-image: url(../Images/537069.webp);
+	background-image: url(../Images/image3.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
@@ -11,8 +11,8 @@ body {
 div.title1 {
 	font-weight: bold;
 	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	color: rgb(0, 0, 0);
-	font-size: 30px;
+	color: rgb(255, 255, 255);
+	font-size: 2vw;
 	text-align: center;
 }
 
@@ -48,6 +48,37 @@ img {
 	position:fixed; 
 	top:0; 
 	left:0; 
-	height: 30%;
-	width: 10%;
+	height: 15%;
+	width: 7%;
+	display: inline;
+	margin-top: 5px;
+	margin-left: 5px;
 } 
+
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a {
+	float: left;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.topnav a.active {
+	background-color: #04AA6D;
+	color: white;
+}
+
+.topnav-right {
+	float: right;
+}
