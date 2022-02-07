@@ -1,5 +1,5 @@
 body {
-	background-image: url(../Images/image3.jpg);
+	background-image: url("https://www.andrey-andreev.com/wp-content/uploads/2017/10/IMGP0505.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
@@ -11,32 +11,15 @@ body {
 div.title1 {
 	font-weight: bold;
 	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	color: rgb(255, 255, 255);
-	text-align: center;
-	font-size: 3vw;
-}
+	color: rgb(223, 21, 21);
+	font-size: 3.5vw;
+	margin-bottom: 10px;
+	margin-left: 40%;
+}	
 
-.home {
-	display: block;
-	width: 100px;
-	font-size: 20px;
-	margin-bottom: 1rem;
-}
-
-.home a {
+a {
 	text-decoration: none;
-	color: #000;
-}
-
-.a-checkpoint-list {
-	width:400px;margin:0 auto
-}
-
-.a-checkpoint-list ul{
-	list-style-image: url("../Images/thumb256.png");
-	list-style-type: none;
-	padding-left: 0px;
-	font-size:50px;
+	color: initial;
 }
 
 img {
@@ -54,19 +37,17 @@ img {
 	margin-top: 5px;
 	margin-left: 5px;
 } 
-
 .topnav {
-    overflow: hidden;
+    overflow: hidden;	
 }
 
 .topnav a {
 	float: left;
-	color: rgb(255, 255, 255);
+	color: rgb(223, 21, 21);
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 20px;
-	
 }
 
 .topnav a:hover {
@@ -75,10 +56,26 @@ img {
 }
 
 .topnav a.active {
-	background-color: #000000;
+	background-color: #04AA6D;
 	color: white;
 }
 
 .topnav-right {
 	float: right;
+}
+
+
+
+.mapouter {
+	position:relative;
+	text-align:right;
+	height:500px;
+	width:644px;
+}
+
+.gmap_canvas {
+	overflow:hidden;
+	background:none!important;
+	height:500px;
+	width:644px;
 }
