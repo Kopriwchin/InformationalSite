@@ -4,7 +4,6 @@ body {
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
 	background-size: cover;
 }
 
@@ -70,4 +69,18 @@ img {
 
 .topnav-right {
 	float: right;
+}
+
+.mapouter {
+	position: relative;
+	text-align: right;
+	height: 500px;
+	width: 644px;
+	float: right;
+}
+
+.gmap_canvas {
+	overflow: hidden;
+	height:500px;
+	width: 644px;
 }
