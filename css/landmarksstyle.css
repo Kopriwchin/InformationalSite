@@ -103,10 +103,6 @@ img {
     position: relative;
 }
 
-div {
-    display: block;
-}
-
 .row::after {
     clear: both;
 }
@@ -117,5 +113,10 @@ div {
 }
 
 div.pictureText {
-	font-size: 35px;
+	font-size: 25px;
+}
+
+div.photoLandmark {
+	float: left;
+	padding: 0 10px;
 }
