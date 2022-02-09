@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 	<link rel="stylesheet" href="css/reservationformstyle.css" />
 	<link href="Images/favicon.ico" rel="icon" type="image/x-icon" />
+	<script src="js/form.js"></script>
 	<title>Contact - Stara Zagora</title>
 </head>
 
@@ -32,17 +33,22 @@
 
 <body>
 	<div class="w3-container w3-padding-32" id="contact">
-	<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-	<p>Lets get in touch and talk about your next project.</p>
-	<form action="/action_page.php" target="_blank">
-		<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-		<input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-		<input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
-		<input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
-		<button class="w3-button w3-black w3-section" type="submit">
-			<i class="fa fa-paper-plane"></i> SEND MESSAGE
-		</button>
+	<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Резервационна форма</h3>
+	<p>Попълнете вашите данни</p>
+	<form onsubmit="calculate(event)">
+		<select value="0" class="w3-input w3-section w3-border" onchange="updatePrice(event)">
+			<option value="0">Green Hill</option>
+			<option value="1">Merian Palace</option>
+			<option value="2">Park Hotel</option>
+		</select>
+		<img id="hotel-image" src="Images/hotelsPhotos/greenhill2.jpg">
+		<input id="price" class="w3-input w3-section w3-border" type="text" placeholder="Цена" readonly>
+		<input id="nights" class="w3-input w3-section w3-border" type="text" placeholder="Нощувки">
+		<input class="w3-button w3-black w3-section" type="submit" value="Изчисли">
 	</form>
+	<div class="title1">
+		<h1 id="result"></h1>
+	</div>
 	</div>
 
 </body>

@@ -1,5 +1,5 @@
 body {
-	background-image: url('../Images/007.jpg');
+	background-image: url('../Images/hotelForm.png');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
@@ -17,7 +17,7 @@ body {
 div.title1 {
 	font-weight: bold;
 	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	color: rgb(0, 0, 0);
+	color: rgb(255, 0, 0);
 	font-size: 3vw;
 	text-align: center;
 }
@@ -83,4 +83,17 @@ img {
 	overflow: hidden;
 	height:500px;
 	width: 644px;
+}
+
+div.pictureText {
+	font-size: 25px;
+}
+
+div.photoLandmark {
+	float: left;
+	padding: 0 10px;
+}
+
+div.overallItem {
+	display: inline-block;
 }

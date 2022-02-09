@@ -120,3 +120,7 @@ div.photoLandmark {
 	float: left;
 	padding: 0 10px;
 }
+
+div.overallItem {
+	display: inline-block;
+}
