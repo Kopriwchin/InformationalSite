@@ -33,43 +33,39 @@
 
 <body>
 	<div class="w3-container w3-padding-32" id="contact">
-	<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Резервационна форма</h3>
-	<p>Попълнете вашите данни</p>
-	<form onsubmit="calculate(event)">
-		<select id="hotel" value="0" class="w3-input w3-section w3-border" onchange="updatePrice()">
-			<option value="0">Green Hill</option>
-			<option value="1">Merian Palace</option>
-			<option value="2">Park Hotel</option>
-		</select>
-		<img id="hotel-image" src="Images/hotelsPhotos/greenhill2.jpg">
-		<input id="firstName" class="w3-input w3-section w3-border" type="text" placeholder="Име" >
-		<input id="lastName" class="w3-input w3-section w3-border" type="text" placeholder="Фамилия" >
-		<input id="mobileNum" class="w3-input w3-section w3-border" type="text" placeholder="Тел. номер" >
-		<input id="email" class="w3-input w3-section w3-border" type="text" placeholder="Email" >
-		<input id="price" class="w3-input w3-section w3-border" type="text" placeholder="Цена" readonly>
-		<select id="room" value="0" class="w3-input w3-section w3-border" onchange="updatePrice()">
-			<option value="0">Обикновена Стая (+25 лева)</option>
-			<option value="1">Студио (+50 лева)</option>
-		</select>
-		<input id="nights" class="w3-input w3-section w3-border" type="text" placeholder="Нощувки">
-		<input id="children" class="w3-input w3-section w3-border" type="text" placeholder="Брой Деца">
-		<input id="adults" class="w3-input w3-section w3-border" type="text" placeholder="Брой Възрастни">
-		<input class="w3-button w3-black w3-section" type="submit" value="Изчисли">
-	</form>
-	<div class="title1">
-		<h1 id="result"></h1>
+		<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Резервационна форма</h3>
+		<p>Попълнете вашите данни</p>
+		<form onsubmit="calculate(event)">
+			<select id="hotel" value="0" class="w3-input w3-section w3-border" onchange="updatePrice()">
+				<option value="0">Green Hill</option>
+				<option value="1">Merian Palace</option>
+				<option value="2">Park Hotel</option>
+			</select>
+			<img id="hotel-image" src="Images/hotelsPhotos/greenhill2.jpg">
+			<input id="firstName" class="w3-input w3-section w3-border" type="text" placeholder="Име" >
+			<input id="lastName" class="w3-input w3-section w3-border" type="text" placeholder="Фамилия" >
+			<input id="mobileNum" class="w3-input w3-section w3-border" type="text" placeholder="Тел. номер" >
+			<input id="email" class="w3-input w3-section w3-border" type="text" placeholder="Email" >
+			<input id="price" class="w3-input w3-section w3-border" type="text" placeholder="Цена" readonly>
+			<select id="room" value="0" class="w3-input w3-section w3-border" onchange="updatePrice()">
+				<option value="0">Обикновена Стая (+25 лева)</option>
+				<option value="1">Студио (+50 лева)</option>
+			</select>
+			<input id="nights" class="w3-input w3-section w3-border" type="text" placeholder="Нощувки">
+			<input id="children" class="w3-input w3-section w3-border" type="text" placeholder="Брой Деца">
+			<input id="adults" class="w3-input w3-section w3-border" type="text" placeholder="Брой Възрастни">
+			<input class="w3-button w3-black w3-section" type="submit" value="Изчисли">
+		</form>
+		<div class="title1">
+			<h1 id="result"></h1>
+		</div>
 	</div>
-	</div>
-	<button class="payment-button">Плащане в брой</button>
+	<button onclick="payCash()" class="payment-button" type="button">Плащане в брой</button>
 	<a href="creditCard.html"><button class="payment-button" type="button">Плащане с карта</button></a>
-	<form id="card" style="display: none;" onsubmit="calculate(event)">
-		
-	</form>
 	<script>
 		updatePrice();
 		[ ...document.querySelectorAll(".payment-button") ].forEach(x => x.style.display = "none");
 	</script>
 </body>
-
 </html>
 

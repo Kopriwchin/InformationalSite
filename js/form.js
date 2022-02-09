@@ -24,7 +24,7 @@ function toggleCardForm(visible) {
 }
 
 function validate(number, text) {
-	const invalid = isNaN(number) && number > 0;
+	const invalid = isNaN(number) || number <= 0;
 	if (invalid)
 		alert(`Моля, въведете валиден брой ${text}!`);
 	return invalid;
@@ -64,7 +64,12 @@ function calculate(event) {
 	const adultsPrice = adults * prices[hotelIndex][0];
 	const childrenPrice = children * prices[hotelIndex][1];
 	const roomTax = roomTaxes[roomIndex];
-	const finalPrice = roomTax + nights * (adultsPrice + childrenPrice);
+	const finalPrice = nights * (roomTax + adultsPrice + childrenPrice);
 	document.querySelector("#result").innerText = finalPrice.toFixed(2) + "лв.";
 	[ ...document.querySelectorAll(".payment-button") ].forEach(x => x.style.display = "block");
+}
+
+function payCash() {
+	alert("Резервацията е успешна!");
+	location.href = "index.html";
 }
