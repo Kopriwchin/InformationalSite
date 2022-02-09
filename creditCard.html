@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+	<link rel="stylesheet" href="css/creditcardstyle.css">
+</head> 
+
+<header>
+	<div id="logo"> 
+		<a href="index.html">
+			<img src="url(../../Images/1200px-Stara-Zagora-coat-of-arms.svg.png"/> 
+		</a>
+	</div>
+
+	<div class="topnav">	
+		<div class="topnav-right">
+			<a class="active" href="landmarks.html">Забележителности</a>
+			<a href="history.html">История</a>
+			<a href="gallery.html">Галерия</a>
+			<a href="hotels.html">Хотели</a>
+			<a href="reservationform.html">Резервация</a>
+		</div>
+	</div>
+</header>
+
+<body>
+    <div style="text-align: center; margin-top: 100px;" class="container-fluid">
+        <div style="color: white;" class="creditCardForm">
+            <div class="heading">
+                <h1>Confirm Purchase</h1>
+            </div>
+            <div class="payment">
+                <form>
+                    <div class="form-group owner">
+                        <label for="owner">Owner</label>
+                        <input type="text" class="form-control" id="owner">
+                    </div>
+                    <div class="form-group CVV">
+                        <label for="cvv">CVV</label>
+                        <input type="text" class="form-control" id="cvv">
+                    </div>
+                    <div class="form-group" id="card-number-field">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" class="form-control" id="cardNumber">
+                    </div>
+                    <div class="form-group" id="expiration-date">
+                        <label>Expiration Date</label>
+                        <select>
+                            <option value="01">January</option>
+                            <option value="02">February </option>
+                            <option value="03">March</option>
+                            <option value="04">April</option>
+                            <option value="05">May</option>
+                            <option value="06">June</option>
+                            <option value="07">July</option>
+                            <option value="08">August</option>
+                            <option value="09">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        <select>
+                            <option value="22"> 2022</option>
+                            <option value="23"> 2023</option>
+                            <option value="24"> 2024</option>
+                            <option value="25"> 2025</option>
+                            <option value="26"> 2026</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="credit_cards">
+                        <img src="Images/visa.jpg" id="visa">
+                        <img src="Images/mastercard.jpg" id="mastercard">
+                        <img src="Images/amex.jpg" id="amex">
+                    </div>
+                    <div class="form-group" id="pay-now">
+                        <button type="submit" class="btn btn-default" id="confirm-purchase">Confirm</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.payform.min.js" charset="utf-8"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
