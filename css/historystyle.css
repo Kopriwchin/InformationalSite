@@ -1,17 +1,10 @@
 body {
-	background-image: url('../Images/007.jpg');
+	background-image: url('../Images/backgroundhistory.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-.home {
-	display: block;
-	width: 100px;
-	font-size: 20px;
-	margin-bottom: 1rem;
 }
 
 div.title1 {
@@ -22,21 +15,15 @@ div.title1 {
 	text-align: center;
 }
 
-p.contentText {
-	text-align: justify;
-	font-size: 40px;
-	color:rgb(0, 0, 0)
-}
-
 img {
 	max-width: 100%;
 	max-height: 100%;
 }
 
 #logo { 
-	position:fixed; 
-	top:0; 
-	left:0; 
+	position: fixed; 
+	top: 0; 
+	left: 0; 
 	height: 15%;
 	width: 7%;
 	display: inline;
@@ -72,7 +59,6 @@ img {
 }
 
 .mapouter {
-	position: relative;
 	text-align: right;
 	height: 500px;
 	width: 644px;
@@ -83,4 +69,18 @@ img {
 	overflow: hidden;
 	height:500px;
 	width: 644px;
+}
+
+p {
+	font-weight: bold;
+	font-size: 20px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ol li {
+	font-size: 20px;
+}
+
+h3 {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

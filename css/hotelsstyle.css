@@ -71,27 +71,13 @@ img {
 	float: right;
 }
 
-.mapouter {
-	position: relative;
-	text-align: right;
-	height: 500px;
-	width: 644px;
-	float: right;
-}
-
-.gmap_canvas {
-	overflow: hidden;
-	height:500px;
-	width: 644px;
+div.photoLandmark {
+	float: left;
+	padding: 0 10px;
 }
 
 div.pictureText {
 	font-size: 25px;
-}
-
-div.photoLandmark {
-	float: left;
-	padding: 0 10px;
 }
 
 div.overallItem {

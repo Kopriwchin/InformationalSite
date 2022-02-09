@@ -7,13 +7,6 @@ body {
 	background-size: cover;
 }
 
-.home {
-	display: block;
-	width: 100px;
-	font-size: 20px;
-	margin-bottom: 1rem;
-}
-
 div.title1 {
 	font-weight: bold;
 	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
